@@ -9,6 +9,7 @@ const claimRoutes  = require('./routes/claim');
 const statusRoutes = require('./routes/status');
 
 const app  = express();
+app.set('trust proxy', 1);
 const PORT = process.env.PORT || 3001;
 
 // Allowed origins — tambah domain Vercel kamu setelah deploy
