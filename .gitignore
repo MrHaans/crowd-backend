@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+
+# Environment — JANGAN PERNAH commit file ini
+.env
+.env.local
+.env.production
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Logs
+*.log
+logs/
+
+# Hardhat artifacts (kalau contracts ada di repo yang sama)
+artifacts/
+cache/
