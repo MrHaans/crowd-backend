@@ -292,6 +292,9 @@ router.get('/:claimId', async (req, res) => {
         create:  claim.tx_create_hash,
         confirm: claim.tx_confirm_hash,
       },
+      explorerUrl: claim.tx_confirm_hash
+        ? `https://explorer.cronos.org/testnet/tx/${claim.tx_confirm_hash}`
+        : null,
     });
   } catch (err) {
     console.error('[/:claimId]', err.message);
